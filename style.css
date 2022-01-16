@@ -242,7 +242,7 @@ select::after{
     display: none;
 }
 .conatiner{
-    margin-top:70px;
+    margin-top:9.8vh;
 }
 .lang:hover .check::after{
     display: block;
@@ -296,7 +296,6 @@ select::after{
      flex-direction: column;
      justify-content: center;
      padding: 10px;
-     border:1px solid #131921;
      position: relative;
 
  }
@@ -343,6 +342,14 @@ select::after{
      border-bottom-color: rgb(153, 113, 13);
      border-left-color: rgb(176, 130, 15);
  }
+.mobile-price i{
+    font-size: 10px;
+    color:#000;
+    position: absolute;
+}
+.change{
+    margin-left: 7px;
+}
  .lists{
     position: relative;
     display: flex;
@@ -1048,8 +1055,14 @@ hr{
     width:80%;
     display: flex;
 }
+.images-cont-7::-webkit-scrollbar{
+    display: none;
+}
 .content-cont7{
     width:90vw;
+}
+.content-cont7::-webkit-scrollbar{
+    display: none;
 }
 .inpired img{ 
     max-width:150px;
@@ -1094,6 +1107,9 @@ hr{
 }
 .other-inspired i{
     font-size: 12px;
+}
+.content-cont7::-webkit-scrollbar{
+    display: none;
 }
 .content-cont7{
     overflow: auto;

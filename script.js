@@ -173,7 +173,7 @@ $(document).ready(function() {
   var mobile=document.querySelector(".changeable");
   var mobileText=document.querySelector(".replacebale-text");
   var mobileClass=document.querySelectorAll(".mobileClass");
-  var mobilePrice=document.querySelector(".mobile-price");
+  var mobilePrice=document.querySelector(".change");
   function displayMobile(i){
       for(var a=0;a<mobileClass.length;a++){
         mobileClass[a].classList.remove("active");
