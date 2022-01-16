@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="" href="images/icon (1).png">
+    <title>Amazon-Clone</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id=section>
+        <nav>
+            <div class="nav-first-line">
+                <div class="logo hover-class">
+                    <img class="logo-img" src="images/logo.png" alt="">
+                </div>
+                <div class="nav-address-icon hover-class">
+                    <div class="location-icon">
+                    <img src="images/location.png" alt="">
+                    </div>
+                    <div class="location-text">
+                        <p>Hello</p>
+                        <h3>Select your address</h3>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <div class="search-left">
+                        <select name="All" class="drop-down" id="resizing_select">
+                            <option value="#">All</option>
+                            <option value="#">Alexa Skills</option>
+                            <option value="#">Amazon Devices</option>
+                            <option value="#">Amazon Fashion</option>
+                            <option value="#">Amazon Fresh</option>
+                            <option value="#">Amazon Pantry</option>
+                            <option value="#">Appliances</option>
+                            <option value="#">Apps & Games</option>
+                            <option value="#">Baby</option>
+                            <option value="#">Beauty</option>
+                            <option value="#">Books</option>
+                            <option value="#">Car & Motorbike</option>
+                            <option value="#">Electronics</option>
+                            <option value="#">Furnitures</option>
+                            <option value="#">Gift Card</option>
+                            <option value="#">Games</option>
+                            <option value="#">Music</option>
+                            <option value="#">Software</option>
+                            <option value="#">Watches</option>
+                        </select>
+                        <div class="triangle-drop-down"></div>
+                        <select id="width_tmp_select">
+                            <option id="width_tmp_option"></option>
+                          </select>
+                          
+                    </div>
+                    <div class="search-center">
+                        <input type="text" class="search-bar-center">
+                      </div>
+                      <div class="search-right">
+                          <img src="images/search logo.png" alt="">
+                      </div>
+            </div>
+            <div class="flag">
+                <img src="images/Indian-flag.jpeg" alt="Indian-Flag">
+                <div class="triangle-logo"></div>
+                <div class="flag-hidden">
+                    <div class="flag-tri">  
+                    </div>
+                    <label class="lang first">
+                        <p>English-EN</p>
+                        <input type="radio" name="radio" checked="checked">
+                        <span class="check"></span>
+                    </label>
+                    <div class="line"></div>
+                    <label class="lang second">हिंदी
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">தமிழ்- TA
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">
+                        മലയാളം -MA
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">ಕನ್ನಡ- KN
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">తెలుగు- TL
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang last">मराठी- MA
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <div class="line"></div>
+                    <div class="flag-text">
+                        <img src="" alt=""><p>You are shopping on Amazon.in</p>
+                        <a href="#">Change country/region</a>
+                    </div>
+                </div>
+            </div>
+            <div class="account hover-class">
+                <p>Hello Sign in</p>
+                <h3>Accounts & lists <div class="triangle-logo"></div></h3>
+                <div class="account-hidden">
+                    <div class="flag-tri"></div>
+                    <button class="account-hidden-sign-in">Sign in</button>
+                    <div class="account-text">
+                        <p>New Customer?<a href="#"> Start here</a></p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="lists">
+                        <div class="your-list">
+                            <h1>Your Lists</h1>
+                            <ul>
+                                <li>Create a Wish List</li>
+                                <li>Wish from Any Website</li>
+                                <li>Baby Wish Lists</li>
+                                <li>Discover Your Style</li>
+                                <li>Explore Showroom</li>
+                            </ul>
+                        </div>
+                        <div class="right-side-lists">
+                        <div class="line"></div>
+                        <div class="your-account">
+                            <h1>Your Account</h1>
+                            <ul>
+                                <li>Your Account</li>
+                                <li>Your orders</li>
+                                <li>Your Wish List</li>
+                                <li>Your Recommendations</li>
+                                <li>Your Prime Membership</li>
+                                <li>Your prime Video</li>
+                                <li>Your Subscriptions & Save items</li>
+                                <li>Memberships and Subscriptons</li>
+                                <li>Your Amazon Business Account</li>
+                                <li>Your Seller Account</li>
+                                <li>Manage Your Content and Devices</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="return hover-class">
+                <p>Returns</p>
+                <h3>& Orders</h3>
+            </div>
+            <div class="cart hover-class" >
+                <div class="number">
+                    0
+                </div>
+                <img src="images/cart.png" alt="cart">
+                <h3 class="cart-text">Cart</h3>
+            </div>
+        </div>
+        <div class="nav-second-line">
+            <ul>
+                <li><i class="fas fa-bars"></i>All</li>
+                <li>Best Sellers</li>
+                <li>Mobiles</li>
+                <li>Customer Service</li>
+                <li>Electronics</li>
+                <li class="prime">Prime<div class="triangle-logo">
+                        <div class="prime-hidden">
+                            <img src="images/prime.jpg" alt="">
+                            <div class="flag-tri"></div>
+                        </div>
+                        </div>
+                </li>
+                <li>Fashion</li>
+                <li>Today's Deals</li>
+                <li>Home & Kitchen</li>
+                <li>Amazon Pay</li>
+                <li>New Release</li>
+                <img class="movie-info" src="images/movie-info.png" alt="">
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="conatiner" id="section1">
+        <div class="slides">
+            <i class="fas lf arrow fa-chevron-left"></i>
+          <img src="images/images.jpeg" class="slide" alt="">
+          <img src="images/51B7JRW7xqL._SX3000_.jpg" class="slide" alt="">
+          <img src="images/61FuWeCuGCL._SX3000_.jpg" class="slide" alt="">
+          <img src="images/611swYV2idL._SX3000_.jpg" class="slide" alt="">
+          <img src="images/71KSRuP9t+L._SX3000_.jpg" class="slide" alt="">
+          <img src="images/images.jpeg" class="slide" alt="">
+          <img src="images/51B7JRW7xqL._SX3000_.jpg" class="slide" alt="">
+          <i class="fas rt arrow fa-chevron-right"></i>
+        </div>
+      </div>
+      <div id="move-upr">
+      <div class="container-2">
+        <div class="categories-container">
+            <div class="categories-container-small">
+              <div class="categories-container-text">
+              <h2>Professional tools, testing & more</h2></div>
+              <div class="categories-container-images">
+                      <div class="particular-categories">
+                          <img src="images/professional.jpg" alt="" class="img-common">
+                          <a href="#">Professional tools</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/measuring.jpg" alt="" class="img-common">
+                          <a href="#">Measuring instruments</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/cleaning.jpg" alt="" class="img-common">
+                          <a href="#">Cleaning supplies</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/medical.jpg" alt="" class="img-common">
+                          <a href="#">Meadical supplies</a>
+                      </div>  
+            </div>
+            <div class="more-items">
+                <a href="#">See more</a>
+            </div>
+            </div>
+            <div class="categories-container-small">
+              <div class="categories-container-text">
+                  <h2>Upgrade your home | Amazon Brands & more</div></h2>
+                  <div class="categories-container-images">
+                      <div class="particular-categories">
+                          <img src="images/led image.jpeg" alt="" class="img-common">
+                          <a href="#">Smart LED TV's</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/appliacnces.jpg" alt="" class="img-common">
+                          <a href="#">Appliances</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/furniture.jpg" alt="" class="img-common">
+                          <a href="#">Furniture</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/kitchen .jpg" alt="" class="img-common">
+                          <a href="#">Kitchen products</a>
+                      </div> 
+                  </div>
+                  <div class="more-items">
+                      <a href="#">See more</a>
+                  </div>
+          </div>          
+          <div class="categories-container-small">
+              <div class="categories-container-text">
+                  <h2>Top picks for your home</div></h2>
+                  <div class="categories-container-images">
+                      <div class="particular-categories">
+                          <img src="images/ac.jpg" alt="" class="img-common">
+                          <a href="#">ACs</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/refridgerator.jpg" alt="" class="img-common">
+                          <a href="#">refrigerator</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/microwaves.jpg" alt="" class="img-common">
+                          <a href="#">Microwaves</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/washing.jpg" alt="" class="img-common">
+                          <a href="#">washing machines</a>
+                      </div> 
+                  </div>
+                  <div class="more-items">
+                      <a href="#">See more</a>
+                  </div>
+          </div>  
+          <div class="categories-container-small sponsored">
+              <div class="without-spon">
+                  <div class="categories-container-text">
+                      <h2>Sign in for your best experience</h2>
+                      <button>Sign-in securely</button>
+                  </div>
+              </div>
+              <div class="spon-image">
+                  <img src="images/laptops.jpg" alt="">
+                  <div class="spon-text">
+                      <p>Sponsored<i class="fas fa-info-circle"></i></p>
+                  </div>
+              </div>
+          </div>          
+          <div class="categories-container-small">
+              <div class="categories-container-text">
+                  <h2>Shop by category</div></h2>
+                  <div class="categories-container-images">
+                      <div class="particular-categories">
+                          <img src="images/fresh.jpg" alt="" class="img-common">
+                          <a href="#">Fresh</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/mobiles.jpg" alt="" class="img-common">
+                          <a href="#">Moblies</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/fashion.jpg" alt="" class="img-common">
+                          <a href="#">Fashion</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/electronics.jpg" alt="" class="img-common">
+                          <a href="#">Electronics</a>
+                      </div> 
+                  </div>
+                  <div class="more-items">
+                      <a href="#">See more</a>
+                  </div>
+          </div>         
+           <div class="categories-container-small hide">
+              <div class="categories-container-text">
+                  <h2>Automotive essentials | Up to 60% off</h2></div>
+                  <div class="categories-container-images">
+                      <div class="particular-categories">
+                          <img src="images/cleanjpg.jpeg" alt="" class="img-common">
+                          <a href="#">Cleaning accessories</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/tyre.jpg" alt="" class="img-common">
+                          <a href="#">Tyre & rim care</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/helmets.jpg" alt="" class="img-common">
+                          <a href="#">Helmets</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/vaccum.jpg" alt="" class="img-common">
+                          <a href="#">Vacuum cleaner</a>
+                      </div> 
+                  </div>
+                  <div class="more-items">
+                      <a href="#">See more</a>
+                  </div>
+          </div>          
+          <div class="categories-container-small hide">
+              <div class="categories-container-text">
+                  <h2>Pay your credit card bills on Amazon</div></h2>
+              <img src="images/amazon-pay.jpg" alt="" class="amazon-pay">
+              <div class="more-items">
+                  <a href="#">Explore</a>
+              </div>
+          </div>
+          <div class="categories-container-small">
+              <div class="categories-container-text">
+                  <h2>Styles for Women | Up to 70% off</div></h2>
+                  <div class="categories-container-images">
+                      <div class="particular-categories">
+                          <img src="images/women-cloth.jpg" alt="" class="img-common">
+                          <a href="#">Women's clothing</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/footware.jpg" alt="" class="img-common">
+                          <a href="#">Footware+Handbags</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/watches.jpg" alt="" class="img-common">
+                          <a href="#">Watches</a>
+                      </div>
+                      <div class="particular-categories">
+                          <img src="images/fashion.jpg" alt="" class="img-common">
+                          <a href="#">Fashion jewellery</a>
+                      </div> 
+                  </div>
+                  <div class="more-items">
+                      <a href="#">End of season sale</a>
+                  </div>
+          </div>
+        </div>
+        </div>
+      <div class="container-3">
+        <div class="today-deal-conatiner">
+            <div class="today-deal-text">
+            <h2>More everyday essentials to explore</h2>
+            </div>
+            <div class="All-deals">
+                <div class="sliderButton left">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="deal deal1">
+                    <img src="images/gillete.jpg" alt="">
+                </div>
+                <div class="deal deal2">
+                    <img src="images/memory.jpg" alt="">
+                </div>
+                <div class="deal deal3">
+                    <img src="images/mask.jpg" alt="">
+                </div>
+                <div class="deal deal4">
+                    <img src="images/mask2.jpg" alt="">
+                </div>
+                <div class="deal deal5">
+                    <img src="images/mask3.jpg" alt="">
+                </div>
+                <div class="deal deal6">
+                    <img src="images/mosq1.jpg" alt="">
+                </div>
+                <div class="deal deal7">
+                    <img src="images/dr-ortho.jpg" alt="">
+                </div>
+                <div class="deal deal8">
+                    <img src="images/whey.jpg" alt="">
+                </div>
+                <div class="deal deal9">
+                    <img src="images/creatine.jpg" alt="">
+                </div>
+                <div class="sliderButton right">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+        <input type="range" min="1" value="0" id="slider">
+      </div>
+      <div class="container-4">
+        <div class="working-div1 cont4div">
+            <div class="working-div-text ">
+                <h2>Up to 45% off | Top offers from Amazon Brand - Solimo
+                </h2>
+              </div>
+              <img class="sofa" src="images/sofa.jpeg" alt="">
+              <div class="more-text">
+                <a href="#">See more</a>
+            </div>
+            </div>
+          <div class="cont4div">
+            <div class="working-div-text">
+                <h2>Make your parenting joureny easier</h2>
+            </div>
+                <div class="images-conatiner-cont4">
+                  <div class="first-row-img-ctr4">
+                    <div class="parenting parenting-1">
+                        <img src="images/parenting1.jpg" alt="">
+                        <p>Prenatal essentials</p>
+                    </div>
+                    <div class="parenting parenting-2">
+                        <img src="images/parenting2.jpg" alt="">
+                        <p>0-2 years baby essentials</p>
+                    </div>
+                  </div>
+                  <div class="second-row-img-ctr4">
+                    <div class="parenting parenting-3">
+                        <img src="images/parenting3.jpg" alt="">
+                        <p>Prenatal essentials</p>
+                    </div>
+                    <div class="parenting parenting-4">
+                        <img src="images/parenting4.jpg" alt="">
+                        <p>0-2 years baby essentials</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="more-text">
+                    <a href="#">See more</a>
+                </div>
+          </div>
+          <div class="working-div2 cont4div">
+            <div class="working-div-text ">
+                <h2>Topmost collections to make your wedding special</h2>
+              </div>
+              <div class="working-div-imgs" class="choco">
+                  <img src="images/choco.jpg" alt="">
+              </div>
+              <div class="more-text">
+                  <a href="#">See more</a>
+              </div>
+          </div>
+          <div class="working-div3 cont4div">
+            <div class="working-div-text">
+                <h2>Inspired by your browsing history</h2>
+              </div>
+              <div class="display-mobile">
+                  <img src="images/phone1.jpg" class="changeable" alt="">
+              </div>
+              <div class="mobile-text">
+                  <div class="display-mobile-text">
+                      <div class="mobile-info">
+                          <p class="replacebale-text">One Plus Nord CE 5G (Blue Void ,8GB RAM, 128GB Storage)</p>
+                      </div>
+                      <div class="mobile-price">
+                          <b><p>24,999</p></b>
+                      </div>
+                  </div>
+              </div>
+              <div class="extra-mobiles">
+                <img src="images/phone1.jpg" onclick="displayMobile(1)" class="active class1 mobileClass" alt="">
+                <img src="images/phone2.jpg" onclick="displayMobile(2)" class="class2 mobileClass" alt="">
+                <img src="images/phone3.jpg" onclick="displayMobile(3)" class="class3 mobileClass" alt="">
+                <img src="images/phone4.jpg" onclick="displayMobile(4)" class="class4 mobileClass" alt="">
+              </div>
+              <div class="more-text">
+                <a href="#">See more</a>
+              </div>
+          </div>
+      </div>
+      <div class="home-fur">
+          <img src="images/home-fur.jpeg" alt="">
+      <div class="spon-text-home-fur spon-text">
+        <p>Sponsored<i class="fas fa-info-circle"></i></p>
+    </div>
+</div>
+<div class="container-6">
+    <div class="cont6div first">
+    <div class="working-div-text">
+        <h2>Masks and faceshields
+        </h2>
+      </div>
+      <img class="face-mask common" src="images/face-mask.jpg" alt="">
+      <div class="more-text">
+        <a href="#">See more</a>
+    </div>
+    </div>
+    <div class="cont6div">
+        <div class="working-div-text">
+            <h2>4 star+ rated kitchen products | Amazon Brands &...
+            </h2>
+          </div>
+          <img class="kitchen1 common" src="images/kitchen1.jpg" alt="">
+          <div class="more-text">
+            <a href="#">Shop now</a>
+        </div>
+        </div>
+        <div class="cont6div">
+            <div class="working-div-text ">
+                <h2>Up to 45% off | Bedding & linen | Amazon Brands &...
+                </h2>
+              </div>
+              <img class="sofa" src="images/Comforters_Desktop_758x604._SY608_CB413974303_.jpg" alt="">
+              <div class="more-text">
+                <a href="#">See all offers</a>
+            </div>
+            </div>
+            <div class="cont6div last">
+                <div class="working-div-text ">
+                    <h2>Up to 70% off | Electronics clearance store
+                    </h2>
+                  </div>
+                  <img class="laptop common" src="images/laptop1.jpg" alt="">
+                  <div class="more-text">
+                    <a href="#">See more</a>
+                </div>
+                </div>
+    </div>
+    <div class="container-7">
+        <div class="line"></div>
+        <div class="history">
+            <div class="cont7-text">
+                <div class="history-title">
+                    <h2>Inspired by your browsing history</h2>
+                </div>
+                <div class="page-info">
+                    <p class="page">Page 1 of 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="semi-cont-7">
+            <div class="lt-btn-cont7">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="content-cont7">
+                <div class="images-cont-7">
+                    <div class="inspired-content-1 inpired">
+                        <img src="images/h1.jpg" alt="">
+                        <a href="">realme narzo 50i (Carbon Black, 2GB RAM+32GB Storage) - with No Cost EMI/Additional Exchange Offers
+                            </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <a class="rating-number" href="">137</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 7,499.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>
+                                Get it by <b>Tuesday, January 11</b>
+                            </p>
+                            <p>
+                                FREE Delivery over <i class="fas fa-rupee-sign"></i> 499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-2 inpired">
+                        <img src="images/h2.jpg" alt="">
+                        <a href="">
+                            Apple Magic Keyboard for iPad Pro 11-inch and iPad Air (4th Generation) - White
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <a class="rating-number" href="">137</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 27,900.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-3 inpired">
+                        <img src="images/h4.jpg" alt="">
+                        <a href="">
+                            Apple Watch SE (GPS, 44mm) - Space Grey Aluminium Case with Black Sport Band
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <a class="rating-number" href="">6,820</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 31,900.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-4 inpired">
+                        <img src="images/h5.jpg" alt="">
+                        <a href="">Samsung Galaxy M32 5G (Sky Blue, 8GB RAM, 128GB Storage)
+                            4.2 out of 5 stars</a>
+                        <div class="rating one">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <a class="rating-number" href="">18,339</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 18,339.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Tuesday, January 11</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-5 inpired">
+                        <img src="images/h6.jpg" alt="">
+                        <a href="">
+                            iQOO Z3 5G (Cyber Blue, 8GB RAM, 128GB Storage) | India's First SD 768G 5G Processor | 55W FlashCharge | Upto 9 Months No Cos
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <a class="rating-number" href="">40,679</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 20,990.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-6 inpired">
+                        <img src="images/h7.jpg" alt="">
+                        <a href="">OnePlus 9R 5G (Lake Blue, 8GB RAM, 128GB Storage)
+                             </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <a class="rating-number" href="">33,870</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 39,999.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-7 inpired">
+                        <img src="images/h8.jpg" alt="">
+                        <a href="">
+                            Samsung Galaxy M32 5G (Slate Black, 8GB RAM, 128GB Storage)
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <a class="rating-number" href="">18,339</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 22,999.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Tuesday, January 11</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-8 inpired">
+                        <img src="images/h9.jpg" alt="">
+                        <a href="">
+                            2021 Apple iPad Pro with Apple M1 chip (12.9-inch/32.77 cm, Wi-Fi, 256GB) - Space Grey (5th Generation)
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <a class="rating-number" href="">232</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 1,08,900.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-9 inpired">
+                        <img src="images/h10.jpg" alt="">
+                        <a href="">Apple iPhone 12 Pro (256GB) - Gold</a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <a class="rating-number" href=""></a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 1,04,900.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="inspired-content-10 inpired">
+                        <img src="images/h12.jpg" alt="">
+                        <a href="">
+                            Apple 20W USB-C Power Adapter (for iPhone, iPad & AirPods)
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <a class="rating-number" href="">1,899.00</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 1,899.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Friday, January 14</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-11 inpired">
+                        <img src="images/h11.jpg" alt="">
+                        <a href="">Tecno Spark 8T (Turquoise Cyan,4GB RAM, 64GB Storage)| 50MP AI Camera | 6.6" FHD+Display | 5000mAh
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <a class="rating-number" href="">187</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 9,499.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-12 inpired">
+                        <img src="images/h13.jpg" alt="">
+                        <a href="">
+                            Redmi Note 10S (Deep Sea Blue, 6GB RAM, 64GB Storage) -Super Amoled Display
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <a class="rating-number" href="">42,793</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 14,999.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Tuesday, January 11</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-13 inpired">
+                        <img src="images/h14.jpg" alt="">
+                        <a href="">
+                            Redmi 9A (Sea Blue 2GB RAM 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <a class="rating-number" href="">136,486</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 7,499.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-14 inpired">
+                        <img src="images/h15.jpg" alt="">
+                        <a href="">iQOO Z3 5G (Cyber Blue, 6GB RAM, 128GB Storage) | India's First SD 768G 5G Processor | 55W FlashCharge | Upto 9 Months No Cost EMI…
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <a class="rating-number" href="">40,679</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 19,990.00 
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-15 inpired">
+                        <img src="images/h16.jpg" alt="">
+                        <a href="">
+                            Redmi 10 Prime (Astral White 4GB RAM 64GB ROM |Helio G88 with extendable RAM Upto 2GB |FHD+ 90Hz…
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <a class="rating-number" href="">17,808</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 12,499.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-16 inpired">
+                        <img src="images/h17.jpg" alt="">
+                        <a href="">
+                            OnePlus Red Cable Care (12-Month Extended Warranty & 120GB Cloud Storage) (Email Delivery)
+
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <a class="rating-number" href="">1,212</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 1,499.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-17 inpired">
+                        <img src="images/h18.jpg" alt="">
+                        <a href="">
+                            2020 Apple MacBook Pro (13.3-inch/33.78 cm, Apple M1 chip with 8‑core CPU and 8‑core GPU, 8GB RAM, 512GB…
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-halft-alt"></i>
+                            <a class="rating-number" href="">1,326</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 1,28,900.00
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="inspired-content-1 inpired">
+                        <img src="images/h19.jpg" alt="">
+                        <a href="">
+                            Apple iPhone 11 (256GB) - White 
+                        </a>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-halft-alt"></i>
+                            <a class="rating-number" href="">63,863</a>
+                        </div>
+                        <div class="price-inspired">
+                            <i class="fas fa-rupee-sign"></i>
+                            <p>
+                                &nbsp 62,900.00 
+                            </p>
+                        </div>
+                        <div class="other-inspired">
+                            <p>Get it by <b> Wednesday, January 12</b>
+                            </p>
+                            <p>
+                            FREE Delivery over  <i class="fas fa-rupee-sign"></i>499. Fulfilled by Amazon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rt-btn-cont7">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="personalized">
+            <div class="line"></div>
+            <p class="top-personalized">See personalized recommendations</p>
+            <button>Sign in</button>
+            <p class="bottom-personalized">New customer? <a href="">Start here.</a></p>
+            <div class="line"></div>
+          </div>
+          <a href="#section" class="back-to-top">
+            <div >
+                <p>Back to top </p>
+            </div>
+        </a>   
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <ul>
+                <h3>Get to Know Us</h3>
+                <li> About Us</li>
+                <li>Careers</li>
+                <li> Press Releases</li>
+                <li>Amazon Cares</li>
+                <li> Gift a Smile</li>
+            </ul>
+            <ul>
+                <h3>Connect  with Us</h3>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+            <ul>
+                <h3>Make Money with Us</h3>
+                <li>Sell on Amazon</li>
+                <li>Sell under Amazon Accelerator</li>
+                <li>Amazon Global Selling</li>
+                <li>Become an Affiliate</li>
+                <li>Fulfilment by Amazon</li>
+                <li>Advertise Your Products</li>
+                <li>Amazon Pay on Merchants</li>
+            </ul>
+            <ul>
+                <h3>Let Us Help You</h3>
+                <li>COVID-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Amazon Assistant Download</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="logo-lang">
+            <div class="footer-logo">
+                <a href="#section"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="footer-lang">
+                <img src="images/globelogo.png" alt="">
+                <p>English</p>
+                <div class="up-down">
+                    <i class="fas fa-sort-up"></i>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="footer-hidden">
+                    <div class="flag-tri">  
+                    </div>
+                    <label class="lang first">
+                        <p>English-EN</p>
+                        <input type="radio" name="radio" checked="checked">
+                        <span class="check"></span>
+                    </label>
+                    <div class="line"></div>
+                    <label class="lang second">हिंदी
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">தமிழ்- TA
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">
+                        മലയാളം -MA
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">ಕನ್ನಡ- KN
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang">తెలుగు- TL
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <label class="lang last">मराठी- MA
+                        <input type="radio" name="radio">
+                        <span class="check"></span>
+                    </label>
+                    <div class="line"></div>
+                    <div class="footer-hidden-text">
+                        <img src="" alt=""><p>You are shopping on Amazon.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="countries">
+            <ul>
+                <li>Australia</li>
+                <li>Brazil</li>
+                <li>Canada</li>
+                <li>China</li>
+                <li>France</li>
+                <li>Germany</li>
+                <li>Italy</li>
+                <li>Japan</li>
+                <li>Mexico</li>
+                <li>Netherlands</li>
+                <li>Poland</li>
+                <li>Singapore</li>
+                <li>Spain</li>
+                <li>Turkey</li>
+                <li>United Arab Emirates</li>
+                <li>United Kingdom</li>
+                <li>United States</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
